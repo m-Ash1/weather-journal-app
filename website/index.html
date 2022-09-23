@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather Journal</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <main id="app">
+      <div class="data">
+        <div class="left">
+          <div id="temp-description" class="title">Weather Journal App</div>
+          <div class="country">USA</div>
+          <div id="date"></div>
+          <div id="temp">00 °c</div>
+          <div class="image"><img src="images/rain.png" /></div>
+          <div class="input-fields">
+            <input id="zip" type="text" placeholder="Enter the zip code" />
+            <textarea
+              id="feelings"
+              placeholder="How are you feeling today?"
+            ></textarea>
+            <button id="generate">Submit</button>
+          </div>
+        </div>
+        <div class="right">
+          <div class="item">
+            <div class="image icon"><img src="images/cold.png" alt="" /></div>
+            <div class="item-info">
+              <div class="header">Feels Like</div>
+              <div id="feels-like" class="info">00 °c</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image icon">
+              <img src="images/humidity.png" alt="" />
+            </div>
+            <div class="item-info">
+              <div class="header">Humidity</div>
+              <div id="humidity" class="info">00 %</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image icon">
+              <img src="images/pressure.png" alt="" />
+            </div>
+            <div class="item-info">
+              <div class="header">Pressure</div>
+              <div id="pressure" class="info">00 hPa</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image icon"><img src="images/wind.png" alt="" /></div>
+            <div class="item-info">
+              <div class="header">Wind Speed</div>
+              <div id="wind-speed" class="info">00 km/h</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="recent-data">
+        <div class="title">Most Recent Entry</div>
+        <div class="entryHolder entry-header">
+          <div>Date</div>
+          <div>Tempreature</div>
+          <div>Content</div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>
